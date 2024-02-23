@@ -1,0 +1,9 @@
+<h3 class="text-center mt-4 text-primary">List Of Tasks</h3>
+<div class="row">
+    <ul class="list-group col-6 mx-auto">
+        <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let i of todos" index as i>
+            {{i.task}}
+            <button class="btn btn-danger" (click)="delete(i)">×</button>
+        </li>
+    </ul>
+</div>
